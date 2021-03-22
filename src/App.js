@@ -10,7 +10,10 @@ import './App.css';
 // import EventBind from './components/EventBind';
 // import ParentComponent from './components/ParentComponent';
 //import ConditionalRendering from './components/ConditionalRendering';
-import ListRendering from './components/ListRendering';
+//import ListRendering from './components/ListRendering';
+// import KeyIndex from './components/KeyIndex';
+import Stylesheet from './components/stylesheet';
+
 
 
 class App extends React.Component {
@@ -34,7 +37,9 @@ class App extends React.Component {
         {/* <EventBind/> */}
         {/* <ParentComponent></ParentComponent> */}
         {/* <ConditionalRendering></ConditionalRendering> */}
-        <ListRendering></ListRendering>
+        {/* <ListRendering></ListRendering> */}
+        {/* <KeyIndex/> */}
+        <Stylesheet primary={true}/>
         
         {/* <Hello /> */}
       </header>
