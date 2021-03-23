@@ -1,0 +1,14 @@
+.success{
+    color: green;
+}
+.error{
+    color: red;
+}
+.basics{
+    color:rgb(98, 252, 98);
+    font-size: 80px;
+}
+.advanced{
+    color:rgb(38, 247, 38);
+    font-size: 80px;
+}
