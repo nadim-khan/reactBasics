@@ -18,7 +18,7 @@ export class Refs extends Component {
     render() {
         return (
             <div>
-                <h2>Refs</h2>
+                <h2>Refs- Access DOM nodes within React</h2>
                 Focused on start : <input type="text" name="input1" ref={this.inputRef}/>
                 <button onClick={()=>{this.fetchInput()}}>Fetch Input</button>
             </div>

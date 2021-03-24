@@ -20,6 +20,15 @@ import Lifecycle from './components/Lifecycle';
 import Fragment from "./components/advance/Fragment";
 import RegularParent from "./components/advance/RegularParent";
 import Refs from './components/advance/Refs'
+import FWDRefParent from './components/advance/FWDRefParent'
+import Portal from './components/advance/Portal'
+import ErrorBoundary from './components/advance/ErrorBoundary'
+import SuperHero from './components/advance/SuperHero'
+import HighrOrder from './components/advance/HighrOrder'
+import RenderProps from './components/advance/RenderProps'
+import RenderPropsFunc from './components/advance/RenderPropsFunc'
+import ParentCompA from './components/Context/ParentCompA'
+import { UserProvider } from "./components/Context/UserContext";
 
 class App extends React.Component {
   render() {
@@ -57,6 +66,30 @@ class App extends React.Component {
             <Fragment /><hr/>
             <RegularParent/><hr/>
             <Refs/><hr/>
+            <FWDRefParent/><hr/>
+            <Portal/><hr/>
+            <ErrorBoundary>
+              <SuperHero heroName ='Spiderman'/>
+            </ErrorBoundary>
+            <ErrorBoundary>
+              <SuperHero heroName ='Superman'/>
+            </ErrorBoundary>
+            {/* <ErrorBoundary>
+              <SuperHero heroName ='joker'/>
+            </ErrorBoundary><hr/> */}<hr/>
+            <HighrOrder user="Nadeem"/><hr/>
+            <RenderPropsFunc render={(count,incrementCounter, hoverCount,incrementHover)=>
+              <RenderProps 
+                count={count}
+                incrementCounter={incrementCounter}
+                hoverCount={hoverCount}
+                incrementHover={incrementHover}/>
+            }/><hr/>
+            <UserProvider value="Nadeem Khan">
+              <ParentCompA/>
+            </UserProvider>
+            
+            
           </fieldset>
         </header>
       </div>

@@ -31,3 +31,16 @@ fieldset{
   margin:5px;
   background-color:#383e49 ;
 }
+.sectionsA,.sectionsB,.sectionsC{
+  border: 1px solid  #fff;
+  padding:10px;
+}
+.sectionsA{
+  background-color: orangered;
+}
+.sectionsB{
+  background-color: rgb(255, 102, 46);
+}
+.sectionsC{
+  background-color: rgb(248, 117, 69);
+}

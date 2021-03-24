@@ -24,7 +24,8 @@ export class RegularParent extends Component {
         console.log('Parent controller render')
         return (
             <div>
-                [Pure Componet] Regular parent component
+                [Pure Component] Regular parent component - compare previous and next stae and prop using shallow comparision
+                if no change in state or prop then component will not be re rendered
                 <RegularComp name={this.state.name}/>
                 <PureComp name={this.state.name}/>
                 <MemoComp name={this.state.name}/>
