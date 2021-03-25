@@ -29,6 +29,7 @@ import RenderProps from './components/advance/RenderProps'
 import RenderPropsFunc from './components/advance/RenderPropsFunc'
 import ParentCompA from './components/Context/ParentCompA'
 import { UserProvider } from "./components/Context/UserContext";
+import PostList from './components/http/PostList'
 
 class App extends React.Component {
   render() {
@@ -87,7 +88,8 @@ class App extends React.Component {
             }/><hr/>
             <UserProvider value="Nadeem Khan">
               <ParentCompA/>
-            </UserProvider>
+            </UserProvider><hr/>
+            <PostList/>
             
             
           </fieldset>

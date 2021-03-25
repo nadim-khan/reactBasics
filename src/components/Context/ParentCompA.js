@@ -17,3 +17,4 @@ class ParentCompA extends Component {
 }
 
 export default ParentCompA
+
