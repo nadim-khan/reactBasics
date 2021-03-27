@@ -30,6 +30,10 @@ import RenderPropsFunc from './components/advance/RenderPropsFunc'
 import ParentCompA from './components/Context/ParentCompA'
 import { UserProvider } from "./components/Context/UserContext";
 import PostList from './components/http/PostList'
+import UseStateCounter from "./components/hooks/useState/UseStateCounter";
+import UseStateObject from "./components/hooks/useState/UseStateObject";
+import UseStateArray from "./components/hooks/useState/UseStateArray";
+import UseEffectCounter from "./components/hooks/useEffect/useEffectCounter";
 
 class App extends React.Component {
   render() {
@@ -41,34 +45,55 @@ class App extends React.Component {
             <h2 className={styles.basics}>Basic React JS</h2>
             <Greet name="Nadeem" post="Software Developer"></Greet>
             {/* <img src={logo} className="App-logo" alt="logo" /> */}
-                <Welcome name="My React App"></Welcome><hr/>
-                <Message/><hr/>
-                <Greet name="Nadeem" post="Software Developer">
-                  <p className="postClass"> Developer of this app</p>
-                </Greet><hr/>
-                <Greet name="Vivek" post="Researcher">
-                <br/> <button>Action</button>
-                </Greet><hr/>
-                <Greet name="Sukant" post="Python Developer"/><hr/>
-            <Counter/><hr/>
-            <FunctionClick></FunctionClick><hr/>
-            <EventBind/><hr/>
-            <ParentComponent></ParentComponent><hr/>
-            <ConditionalRendering></ConditionalRendering><hr/>
-            <ListRendering></ListRendering><hr/>
-            <KeyIndex/><hr/>
-            <Stylesheet primary={true}/><hr/>
-            <Forms/><hr/>
-            <Hello /><hr/>
+            <Welcome name="My React App"></Welcome>
+            <hr/>
+            <Message/>
+            <hr/>
+            <Greet name="Nadeem" post="Software Developer">
+              <p className="postClass"> Developer of this app</p>
+            </Greet>
+            <hr/>
+            <Greet name="Vivek" post="Researcher">
+              <br/> <button>Action</button>
+            </Greet>
+            <hr/>
+            <Greet name="Sukant" post="Python Developer"/>
+            <hr/>
+            <Counter/>
+            <hr/>
+            <FunctionClick></FunctionClick>
+            <hr/>
+            <EventBind/>
+            <hr/>
+            <ParentComponent></ParentComponent>
+            <hr/>
+            <ConditionalRendering></ConditionalRendering>
+            <hr/>
+            <ListRendering></ListRendering>
+            <hr/>
+            <KeyIndex/>
+            <hr/>
+            <Stylesheet primary={true}/>
+            <hr/>
+            <Forms/>
+            <hr/>
+            <Hello />
+            <hr/>
             <Lifecycle/>
           </fieldset>
           <fieldset>
-            <h2 className={styles.advanced}>Advanced React JS</h2><hr/>
-            <Fragment /><hr/>
-            <RegularParent/><hr/>
-            <Refs/><hr/>
-            <FWDRefParent/><hr/>
-            <Portal/><hr/>
+            <h2 className={styles.advanced}>Advanced React JS</h2>
+            <hr/>
+            <Fragment />
+            <hr/>
+            <RegularParent/>
+            <hr/>
+            <Refs/>
+            <hr/>
+            <FWDRefParent/>
+            <hr/>
+            <Portal/>
+            <hr/>
             <ErrorBoundary>
               <SuperHero heroName ='Spiderman'/>
             </ErrorBoundary>
@@ -77,21 +102,32 @@ class App extends React.Component {
             </ErrorBoundary>
             {/* <ErrorBoundary>
               <SuperHero heroName ='joker'/>
-            </ErrorBoundary><hr/> */}<hr/>
-            <HighrOrder user="Nadeem"/><hr/>
+            </ErrorBoundary><hr/> */}
+            <hr/>
+            <HighrOrder user="Nadeem"/>
+            <hr/>
             <RenderPropsFunc render={(count,incrementCounter, hoverCount,incrementHover)=>
               <RenderProps 
                 count={count}
                 incrementCounter={incrementCounter}
                 hoverCount={hoverCount}
                 incrementHover={incrementHover}/>
-            }/><hr/>
+            }/>
+            <hr/>
             <UserProvider value="Nadeem Khan">
               <ParentCompA/>
-            </UserProvider><hr/>
+            </UserProvider>
+            <hr/>
             <PostList/>
-            
-            
+          </fieldset>
+          <fieldset>
+          <h2 className={styles.basics}>Hooks Concept
+          </h2>
+          <UseStateCounter></UseStateCounter>
+          <UseStateObject></UseStateObject>
+          <UseStateArray></UseStateArray>
+          <hr/>
+          <UseEffectCounter></UseEffectCounter>
           </fieldset>
         </header>
       </div>

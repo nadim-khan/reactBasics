@@ -4,7 +4,7 @@
 
 
 .App-header {
-  background-color: #282c34;
+  background-color: #010409;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,12 +24,14 @@
   color :#61dafb;
 }
 hr{
-  color:white
+  color:#3098ff
 }
 fieldset{
   width:90%;
   margin:5px;
-  background-color:#383e49 ;
+  background-color:#161b22 ;
+  margin:20px;
+  border-radius: 5px;
 }
 .sectionsA,.sectionsB,.sectionsC{
   border: 1px solid  #fff;
