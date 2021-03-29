@@ -13,11 +13,11 @@ import EventBind from './components/EventBind';
 import ParentComponent from './components/ParentComponent';
 import ConditionalRendering from './components/ConditionalRendering';
 import ListRendering from './components/ListRendering';
-import KeyIndex from './components/KeyIndex';
+// import KeyIndex from './components/KeyIndex';
 import Stylesheet from './components/stylesheet';
 import Forms from './components/Forms';
 import Lifecycle from './components/Lifecycle';
-import Fragment from "./components/advance/Fragment";
+// import Fragment from "./components/advance/Fragment";
 import RegularParent from "./components/advance/RegularParent";
 import Refs from './components/advance/Refs'
 import FWDRefParent from './components/advance/FWDRefParent'
@@ -34,6 +34,10 @@ import UseStateCounter from "./components/hooks/useState/UseStateCounter";
 import UseStateObject from "./components/hooks/useState/UseStateObject";
 import UseStateArray from "./components/hooks/useState/UseStateArray";
 import UseEffectCounter from "./components/hooks/useEffect/useEffectCounter";
+import MouseEvent from "./components/MouseEvent";
+import HookMouse from "./components/hooks/useEffect/HookMouse";
+import MouuseEventContainer from "./components/hooks/useEffect/MouuseEventContainer";
+import FetchingData from "./components/hooks/useEffect/FetchingData";
 
 class App extends React.Component {
   render() {
@@ -65,13 +69,14 @@ class App extends React.Component {
             <hr/>
             <EventBind/>
             <hr/>
+            <MouseEvent/><hr/>
             <ParentComponent></ParentComponent>
             <hr/>
             <ConditionalRendering></ConditionalRendering>
             <hr/>
             <ListRendering></ListRendering>
-            <hr/>
-            <KeyIndex/>
+            {/* <hr/>
+            <KeyIndex/> */}
             <hr/>
             <Stylesheet primary={true}/>
             <hr/>
@@ -83,8 +88,8 @@ class App extends React.Component {
           </fieldset>
           <fieldset>
             <h2 className={styles.advanced}>Advanced React JS</h2>
-            <hr/>
-            <Fragment />
+            {/* <hr/>
+            <Fragment /> */}
             <hr/>
             <RegularParent/>
             <hr/>
@@ -128,6 +133,9 @@ class App extends React.Component {
           <UseStateArray></UseStateArray>
           <hr/>
           <UseEffectCounter></UseEffectCounter>
+          <HookMouse/>
+          <MouuseEventContainer/>
+          <FetchingData/>
           </fieldset>
         </header>
       </div>
